@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isDateObjectArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-date-object-array@deno/mod.js';
+import isDateObjectArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-date-object-array@v0.2.0-deno/mod.js';
 ```
 
 #### isDateObjectArray( value )
@@ -84,7 +84,7 @@ bool = isDateObjectArray( [ null, {} ] );
 
 ```javascript
 import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
-import isDateObjectArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-date-object-array@deno/mod.js';
+import isDateObjectArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-date-object-array@v0.2.0-deno/mod.js';
 
 var bool = isDateObjectArray( [ new Date(), new Date(), new Date() ] );
 // returns true
