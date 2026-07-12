@@ -35,32 +35,14 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only [Date][@stdlib/assert/is-date-object] objects.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-date-object-array
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isDateObjectArray = require( '@stdlib/assert-is-date-object-array' );
+import isDateObjectArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-date-object-array@esm/index.mjs';
 ```
 
 #### isDateObjectArray( value )
@@ -70,7 +52,7 @@ Tests if a `value` is an array-like object containing **only** [`Date`][@stdlib/
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
 
 var bool = isDateObjectArray( [ new Date(), new Date() ] );
 // returns true
@@ -100,9 +82,14 @@ bool = isDateObjectArray( [ null, {} ] );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var Number = require( '@stdlib/number-ctor' );
-var isDateObjectArray = require( '@stdlib/assert-is-date-object-array' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="module">
+
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@esm/index.mjs';
+import isDateObjectArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-date-object-array@esm/index.mjs';
 
 var bool = isDateObjectArray( [ new Date(), new Date(), new Date() ] );
 // returns true
@@ -121,6 +108,10 @@ bool = isDateObjectArray( [ 'a', 'b' ] );
 
 bool = isDateObjectArray( [] );
 // returns false
+
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -150,7 +141,7 @@ bool = isDateObjectArray( [] );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -213,7 +204,7 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-date-object-array/main/LICENSE
 
-[@stdlib/assert/is-date-object]: https://github.com/stdlib-js/assert-is-date-object
+[@stdlib/assert/is-date-object]: https://github.com/stdlib-js/assert-is-date-object/tree/esm
 
 <!-- <related-links> -->
 
